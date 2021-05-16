@@ -4,7 +4,9 @@ Web extractor for Yahoo Image website
 
 ## Installation:
 
+```bash
 composer require panduanvip/yahoo-image
+```
 
 ### Usage:
 
