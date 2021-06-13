@@ -83,8 +83,6 @@ class YahooImage{
 
 		$keyword = str_replace(' ', '+', $keyword);
 		$url = "https://images.search.yahoo.com/search/images?p=sepatu+roda&imgsz=large&fr2=piv-web&fr=yfp-t";
-
-		$user_agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
 		
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);	
