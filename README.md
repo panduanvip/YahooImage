@@ -17,10 +17,8 @@ include 'vendor/autoload.php';
 
 use PanduanVIP\WebExtractor\YahooImage;
 
-$url = 'https://id.images.search.yahoo.com/search/images?p=sepatu+roda&fr2=piv-web&fr=yfp-t';
-$html = file_get_contents($url);
-
-$results = json_decode(YahooImage::extractor($html));
+$keyword = 'sepatu roda';
+$results = json_decode(YahooImage::get($keyword));
 
 echo '<pre>';
 print_r($results);
@@ -32,18 +30,18 @@ Array
 (
     [0] => stdClass Object
         (
-            [alt] => Jual Sepatu Roda POWER KING 111 PU Hitam di lapak My Kevin ...
-            [image] => https://s2.bukalapak.com/img/212365895/w-1000/Sepatu_Roda_POWER_KING_111_PU_Hitam.jpg
-            [thumbnail] => https://tse3.mm.bing.net/th/id/OIP._cSoSkmK_-tDfKTIPwj13QHaHa?w=230
-            [source] => https://www.bukalapak.com/p/olahraga/roller-skate/4c024n-jual-sepatu-roda-power-king-111-pu-hitam
+            [alt] => Jual Sepatu Roda Power Line HB22 PINK di lapak Toko Inline tokoinline
+            [image] => https://s4.bukalapak.com/img/482217591/w-1000/Sepatu%20Roda%20Power%20Line%20HB22%20PINK.jpg
+            [thumbnail] => https://tse1.mm.bing.net/th/id/OIP.INMs7HeJfux-F6t0TwSASQHaHa?w=230
+            [source] => https://www.bukalapak.com/p/olahraga/roller-skate/w0vig-jual-sepatu-roda-power-line-hb22-pink
         )
 
     [1] => stdClass Object
         (
-            [alt] => Jual Sepatu Roda Anak Murah Terjamin Berkualitas Barang ...
-            [image] => http://sumbercenel.com/wp-content/uploads/2017/07/cougar-mzs835l-sepatu-roda-inline-skate-black-silver-5703-2996306-1.jpg
-            [thumbnail] => https://tse1.mm.bing.net/th/id/OIP.k5hjhwdUOUjVf08nZzyz4AHaHa?w=230
-            [source] => https://sumbercenel.com/jual-sepatu-roda-anak/
+            [alt] => Jual Sepatu Roda Braman B600 Merah di lapak My Kevin Sports mykevinsports
+            [image] => https://s3.bukalapak.com/img/346611164/w-1000/Sepatu_Roda_Braman_B600_Merah.jpg
+            [thumbnail] => https://tse2.mm.bing.net/th/id/OIP.o2fvABV6NO20nts5LBm7GQHaHa?w=230
+            [source] => https://www.bukalapak.com/p/olahraga/roller-skate/3bbm1r-jual-sepatu-roda-braman-b600-merah
         )
 
     .........
