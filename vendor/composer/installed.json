@@ -1,0 +1,54 @@
+{
+    "packages": [
+        {
+            "name": "panduanvip/helpers",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/panduanvip/Helpers.git",
+                "reference": "3314cd74dbce9a096bae75594c944c426d01015f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/panduanvip/Helpers/zipball/3314cd74dbce9a096bae75594c944c426d01015f",
+                "reference": "3314cd74dbce9a096bae75594c944c426d01015f",
+                "shasum": ""
+            },
+            "time": "2021-07-06T00:24:17+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "PanduanVIP\\Helpers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yoyon Sugiono",
+                    "email": "yoyonsugiono@gmail.com",
+                    "homepage": "https://panduan.vip",
+                    "role": "developer"
+                }
+            ],
+            "description": "Text or string manipulation",
+            "homepage": "https://panduan.dev/panduanvip-helpers",
+            "keywords": [
+                "Text Manipulation",
+                "php",
+                "string manipulation"
+            ],
+            "support": {
+                "issues": "https://github.com/panduanvip/Helpers/issues",
+                "source": "https://github.com/panduanvip/Helpers/tree/1.0.0"
+            },
+            "install-path": "../panduanvip/helpers"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

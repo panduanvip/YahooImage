@@ -6,6 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'PanduanVIP\\WebExtractor\\' => array($baseDir . '/src'),
-    'PanduanVIP\\Helpers\\' => array($vendorDir . '/panduanvip/helpers/src'),
+    'PanduanVIP\\Helpers\\' => array($baseDir . '/src'),
 );

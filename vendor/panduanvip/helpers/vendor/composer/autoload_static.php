@@ -4,37 +4,33 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitdf206cf432b6fb7011721553a55a332a
+class ComposerStaticInitd39e875c397c916db1e8ae0ae5446692
 {
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
-            'PanduanVIP\\WebExtractor\\' => 24,
             'PanduanVIP\\Helpers\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'PanduanVIP\\WebExtractor\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'PanduanVIP\\Helpers\\' => 
         array (
-            0 => __DIR__ . '/..' . '/panduanvip/helpers/src',
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'PanduanVIP\\Helpers\\Please' => __DIR__ . '/../..' . '/src/Please.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitdf206cf432b6fb7011721553a55a332a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitdf206cf432b6fb7011721553a55a332a::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitdf206cf432b6fb7011721553a55a332a::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd39e875c397c916db1e8ae0ae5446692::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd39e875c397c916db1e8ae0ae5446692::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitd39e875c397c916db1e8ae0ae5446692::$classMap;
 
         }, null, ClassLoader::class);
     }
